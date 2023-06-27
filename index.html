@@ -8,12 +8,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form class="container" >
+  <div class="form container">
     <h2>Adicione um contato</h2>
-    <input type="" required placeholder="Nome" id="nome">
-    <input type="number" required placeholder="Número do telefone" id="numero">
+    <div class="obs">
+        <p>
+          Adicione um número de telefone válido (Nome e número devem ser inéditos)
+        </p>
+    </div>
+    <form>
+      <div class="campo">
+        <label for="nome">Nome do contato</label>
+        <input type="text" required placeholder="Nome" id="nome">
+      </div>
+      <div class="campo">
+        <label for="numero">Número</label>
+        <input  required placeholder="(00) 0 0000-0000" id="numero">
+      </div>
     <button type="submit">Adicionar</button>
-  </form>
+    </form>
+  </div>
   <div class="container tabela">
     <h2>lista de contatos</h2>
     <table>
@@ -26,7 +39,6 @@
       <tbody>
       </tbody>
     </table>
-
   </div>
   <script src="./main.js"></script>
 </body>

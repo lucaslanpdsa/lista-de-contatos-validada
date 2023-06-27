@@ -4,18 +4,38 @@
   box-sizing: border-box;
 }
 
+.form {
+  color: #FFF;
+}
+
 form {
-  max-width: 600px;
   width: 100%;
   margin: 0 auto;
-  color: #FFF;
   display: flex;
+  flex-direction: column;
   gap: 8px;
   flex-wrap: wrap;
 }
 
+.obs {
+  padding-left: 50px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  gap: 8px;
+}
+
 form h2 {
   width: 100%;
+}
+
+.form .obs {
+  width: 100%;
+  margin: 10px 0 20px;
 }
 
 form input {
@@ -24,16 +44,17 @@ form input {
   border: none;
   background-color: azure;
   flex-grow: 1;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 button {
   padding: 8px;
   border-radius: 4px;
   border: none;
+  margin: 0 auto;
   background-color: #FFFF;
   color: black;
-  height: min-content
+  width: 10em;
 }
 
 .container {
